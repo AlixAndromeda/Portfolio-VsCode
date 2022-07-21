@@ -4,7 +4,6 @@
   box-sizing: border-box;
   list-style: none;
 }
-
 :root {
   --color-primary: #191d2b;
   --color-secondary: #27AE60;
@@ -31,10 +30,8 @@ body {
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    font-family: inherit;
+    font-family: inherit;  
   }
-
-
   header {
     height: 100vh;
     color: var(--color-white);
@@ -49,13 +46,11 @@ body {
     padding: 3rem 18rem;
   }
 }
-
   .section {
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
     background-color:var(--color-primary);
   }
-  
   .sec1 {
     display:none;
     transform: translateY(0) scale(1);
@@ -76,7 +71,6 @@ body {
     display:none;
     transform: translateY(0) scale(1);
   }
-
   //Controls
   .controls {
     position: fixed;
@@ -88,6 +82,13 @@ body {
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
+    .active-btn{
+      background-color: var(--color-secondary) !important;
+      transition: all .4s ease-in-out;
+      i {
+        color: var(--color-white) !important;
+      }
+    }
     .control {
       padding: 1rem;
       cursor: pointer;
@@ -101,9 +102,11 @@ body {
       margin: .7rem 0;
       box-shadow: var(--box-shadow-1);
       i {
+        i{
         font-size: 1.2rem;
         color: var(--color-grey-2);
         pointer-events: none;
+        }
       }
     }
   }

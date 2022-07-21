@@ -115,6 +115,16 @@ body section {
           transform: translateY(-50%);
 }
 
+.controls .active-btn {
+  background-color: var(--color-secondary) !important;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.controls .active-btn i {
+  color: var(--color-white) !important;
+}
+
 .controls .control {
   padding: 1rem;
   cursor: pointer;
@@ -136,7 +146,7 @@ body section {
           box-shadow: var(--box-shadow-1);
 }
 
-.controls .control i {
+.controls .control i i {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
